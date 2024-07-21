@@ -2,7 +2,7 @@
     /**
    * COLORS
    */
-    --gold-crayola: #fed800;
+    --gold-crayola: #c28840;
     --quick-silver: hsla(0, 0%, 65%, 1);
     --davys-grey: hsla(30, 3%, 34%, 1);
     --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -368,14 +368,11 @@ body.nav-active {
 }
 
 .section-subtitle::after {
-    content: url('../images/seperator.webp');
-    rotate: 90deg;
+    content: url('../images/separator.svg');
     display: block;
-    scale: 40%;
     width: 100px;
     margin-inline: auto;
-    margin-top: -210px;
-    margin-bottom: -110px;
+    margin-block-start: 5px;
 }
 
 .btn {
@@ -436,8 +433,7 @@ body.nav-active {
 }
 
 .btn-secondary {
-    background-color: var(--gold-crayola);
-    color: var(--black);
+    backdrop-filter: blur(5px);
 }
 
 .btn-secondary::before {

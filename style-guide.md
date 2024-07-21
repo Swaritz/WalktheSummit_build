@@ -1,27 +1,32 @@
-# Essential Stuff
-
-## Html import links
-
 Google font
 
-``` html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 Ionicon
 
-``` html
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+```html
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
 ```
 
 ---
 
 ## Colors
 
-``` css
+```css
 --gold-crayola: hsl(38, 61%, 73%);
 --quick-silver: hsla(0, 0%, 65%, 1);
 --davys-grey: hsla(30, 3%, 34%, 1);
@@ -42,16 +47,26 @@ Ionicon
 
 ## Gradient color
 
-``` css
---loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
---gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
+```css
+--loading-text-gradient: linear-gradient(
+  90deg,
+  transparent 0% 16.66%,
+  var(--smoky-black-3) 33.33% 50%,
+  transparent 66.66% 75%
+);
+--gradient-1: linear-gradient(
+  to top,
+  hsla(0, 0%, 0%, 0.9),
+  hsla(0, 0%, 0%, 0.7),
+  transparent
+);
 ```
 
 ## Typography
 
-``` css
---fontFamily-forum: 'Forum', cursive;
---fontFamily-dm_sans: 'DM Sans', sans-serif;
+```css
+--fontFamily-forum: "Forum", cursive;
+--fontFamily-dm_sans: "DM Sans", sans-serif;
 
 --fontSize-display-1: calc(1.3rem + 6.7vw);
 --fontSize-headline-1: calc(2rem + 2.5vw);
@@ -86,26 +101,26 @@ Ionicon
 
 ## Spacing
 
-``` css
+```css
 --section-space: 70px;
 ```
 
 ## Shadow
 
-``` css
+```css
 --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
 ```
 
 ## Border Radius
 
-``` css
+```css
 --radius-24: 24px;
 --radius-circle: 50%;
 ```
 
 ## Transition
 
-``` css
+```css
 --transition-1: 250ms ease;
 --transition-2: 500ms ease;
 --transition-3: 1000ms ease;
