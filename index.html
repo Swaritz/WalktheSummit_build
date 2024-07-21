@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+
+    <title>AdyTech99</title>
+    <meta name="title" content="AdyTech99">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.png">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.png">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.png">
+
+</head>
+
+<body id="top">
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+    <div id="blob"></div>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">AdyTech99</p>
+    </div>
+
+
+
+
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+        <div class="container" id="Gen">
+            <a href="#" id="Gen2">
+                <address class="topbar-item">
+                    <div class="icon">
+                        <ion-icon name="globe-outline"></ion-icon>
+                    </div>
+
+                    <span class="span">
+                        Modrinth & CurseForge </span>
+                </address>
+            </a>
+
+            <div class="separator"></div>
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="logo-discord" style="z-index: 1;"></ion-icon>
+                </div>
+                <a href="https://discord.com/invite/4eWX2duHfJ" target="_blank">
+                    <span class="span">AdyTech99's Discord Server</span>
+                </a>
+            </div>
+
+            <a href="https://www.youtube.com/@adytech99" target="_blank" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">@adytech99</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="mailto:contact@adytech99.dev" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">contact@adytech99.dev</span>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/adytech99.png" width="160" height="50" alt="AdyTech99 - Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/adytech99.png" width="160" height="50" alt="AdyTech99 - Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">About me </span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#footers" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Main Menu</p>
+                </div>
+
+                <!--    &lt;!&ndash;<address class="body-4">
+                        Main market, Leh <br>
+                        Ladakh, North India
+                    </address>
+
+                    <a href="mailto:contact@adytech99.dev" class="body-4 sidebar-link">contact@adytech99.dev</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label"></p>&ndash;&gt;
+
+                    <p class="body-4 navbar-text">Contact via:</p>
+
+                    <a href="mailto:contact@AdyTech99.dev" class="body-1 contact-number hover-underline">
+                        contact@adytech99.dev
+                    </a>
+
+                    <a href="https://discord.com/invite/4eWX2duHfJ" class="body-1 contact-number hover-underline item-2">
+                        Discord (preferred)
+                    </a>
+                </div>-->
+
+            </nav>
+
+            <a href="#menu" class="btn btn-secondary">
+                <span class="text text-1">My Mods</span>
+
+                <span class="text text-2" aria-hidden="true">My Mods</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="./assets/images/hero-slider-1.png" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Hi there! <br> I am AdyTech99
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Professional Minecraft Modder <br> and Developer
+                        </p>
+
+                        <a href="#footers" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Contact me</span>
+
+                            <span class="text text-2" aria-hidden="true">Contact me</span>
+                        </a>
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="./assets/images/hero-slider-2.png" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <h2 class="display-1 hero-title slider-reveal">
+                            I'm a Minecraft Modder
+                        </h2>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            See my projects below
+                        </p>
+
+                        <a href="#menu" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View all projects</span>
+
+                            <span class="text text-2" aria-hidden="true">View all projects</span>
+                        </a>
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="./assets/images/abt-bg-112.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <h3 class="display-1 hero-title slider-reveal" id="longgtext">
+                            I enjoy modding <br>in Minecraft Java
+                        </h3>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Learn more about me
+                        </p>
+
+                        <a href="#about" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">About me</span>
+
+                            <span class="text text-2" aria-hidden="true">About me</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <a href="#menu" class="hero-btn has-after">
+                    <img src="./assets/images/hero-icon.svg" width="48" height="48" alt="booking icon" style="-webkit-filter: invert(100%);">
+
+                    <span class="label-2 text-center span">All projects</span>
+                </a>
+
+            </section>
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about text-center" aria-labelledby="about-label" id="about">
+                <div class="container" style="margin-top:-100px">
+
+                    <div class="about-content">
+
+                        <p class="label-2 section-subtitle" id="about-label">About Me</p>
+
+                        <h2 class="headline-1 section-title">My experience</h2>
+
+                        <p class="section-text" style="text-align: center">
+                            I am a Minecraft Mod Developer, with 9 mods for Minecraft: Java Edition and over 85k downloads across both CurseForge and Modrinth.
+                            <br> -
+                            <br> My favorite mod that I've really enjoyed working on would be Health Indicators, which displays health bars over entities.
+                            <br> -
+                            <br> Other than that, Automatic Infinite Elytra is probably my biggest + most feature rich mod, with an Elytra Autopilot, Auto Area Explorer, and even a music player (for long journeys).
+                            <br> -
+                            <br> My most popular project, however, would be Farlands Reborn, which is also my first ever mod.
+                        </p>
+
+                        <a href="#menu" class="btn btn-primary">
+                            <span class="text text-1">My Projects</span>
+
+                            <span class="text text-2" aria-hidden="true">My Projects</span>
+                        </a>
+
+                    </div>
+
+                    <figure class="about-banner">
+
+                        <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+
+                        <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="3">
+                            <img src="./assets/images/about-abs-image.png" width="285" height="285" loading="lazy" alt="" class="w-100">
+                            <img src="assets/images/img_sep.jpg" alt="" style="z-index: -1;position: absolute;width: 290px;height: 400px;margin-left: 0px; margin-top: -1px;">
+                        </div>
+
+                        <div class="abs-img abs-img-2 has-before">
+                            <img src="./assets/images/badge-2.gif" width="200" height="200" loading="lazy" alt="">
+                        </div>
+
+                    </figure>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+            <!--
+  - #SERVICE
+-->
+
+            <section class="section service bg-black-10 text-center" aria-label="service">
+                <div class="container">
+
+                    <p class="section-subtitle label-2">Minecraft java modding</p>
+
+                    <h2 class="headline-1 section-title">My best projects: </h2>
+
+                    <p class="section-text">
+                        Experience minecraft like never before
+                    </p>
+
+                    <ul class="grid-list">
+
+                        <li id="AIE">
+                            <div class="service-card">
+                                <img src="assets/images/img_sep.jpg" alt="" style="z-index: -1;position: absolute;width: 290px;height: 400px;margin-left: 0px; margin-top: 3px;" class="remover">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                        <img src="./assets/images/service-1.webp" width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+
+                                    <h3 class="title-4 card-title">
+
+                                        <a href="#">Most Advanced</a>
+                                    </h3>
+
+                                    <a href="#menu" class="btn-text hover-underline label-2">View all projects</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li id="HI">
+                            <div class="service-card">
+                                <img src="assets/images/img_sep.jpg" alt="" style="z-index: -1;position: absolute;width: 290px;height: 400px;margin-left: 0px; margin-top: 3px;" class="remover">
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                        <img src="./assets/images/services-2.webp" width="285" height="336" loading="lazy" alt="Appetizers" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+
+                                    <h3 class="title-4 card-title">
+                                        <a href="#">Personal favourite</a>
+                                    </h3>
+
+                                    <a href="#menu" class="btn-text hover-underline label-2">View all projects</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li id="F">
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                        <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+                                    <img src="assets/images/img_sep.jpg" alt="" style="z-index: -1;position: absolute;width: 290px;height: 400px;margin-left: 0px; margin-top: -425px;" class="remover">
+
+                                    <h3 class="title-4 card-title">
+                                        <a href="#">Most Popular</a>
+                                    </h3>
+
+                                    <a href="#menu" class="btn-text hover-underline label-2">View all projects</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <!-- 
+        - #special
+
+
+            <section class="special-dish text-center" aria-labelledby="dish-label">
+
+                <div class="special-dish-banner">
+                    <img src="./assets/images/special-dish-banner.png" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
+                </div>
+
+                <div class="special-dish-content bg-black-10">
+                    <div class="container">
+
+                        <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" style="position:absolute; z-index:1; margin-left:-50px">
+
+                        <p class="section-subtitle label-2">MOST POPULAR MOD</p>
+
+                        <h2 class="headline-1 section-title">Farlands reborn</h2>
+
+                        <p class="section-text">
+                            This mod brings back the farlands in modern Minecraft versions. Version 1.19+. The Farland Reborn Minecraft mod is a modification for Minecraft that reintroduces the "Far Lands" phenomenon that was present in older versions of the game. The Far Lands
+                            were a series of terrain generation anomalies that occurred at extreme distances from the world's center in versions of Minecraft prior to Beta 1.8. These anomalies created bizarre and fascinating landscape formations due to
+                            floating-point precision errors in the terrain generation code.
+                        </p>
+
+                        <div class="wrapper">
+                            <span class="span body-1"></span>
+                        </div>
+
+                        <a href="#menu" class="btn btn-primary">
+                            <span class="text text-1">View top projects</span>
+
+                            <span class="text text-2" aria-hidden="true">View top projects</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+                <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+            </section>
+
+    -->
+
+
+            <!-- 
+        - #MENU
+      -->
+
+            <section class="section menu" aria-label="menu-label" id="menu" style="background-color: #202224; margin-bottom: -76px;">
+                <div class="container" style="margin-top: -80px;">
+
+                    <p class="section-subtitle text-center label-2">My Projects</p>
+
+                    <h2 class="headline-1 section-title text-center">All Mods</h2>
+                    <img src="./assets/images/menu_bgs.png" alt="bg" style="z-index: -1;position: absolute;margin-left: -380px; margin-top: -250px;scale: 90%; " class="remover">
+                    <ul class="grid-list">
+
+                        <li id="FF">
+                            <div class="menu-card hover:card">
+
+                                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./assets/images/menu-1.jpg" width="100px" height="100px" loading="lazy" alt="Farland reborn" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="title-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="card-title">Farlands Reborn</a>
+                                        </h3>
+
+                                        <span class="badge label-1">Popular</span>
+
+                                        <span class="span title-2" id="/Y2YGBPDD_downloads"></span>
+                                    </div>
+
+                                    <p class="card-text label-1">
+                                        This mod brings back the farlands in modern Minecraft versions.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li id="AIEEE">
+                            <div class="menu-card hover:card" style="margin-left: -17px;">
+
+                                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./assets/images/menu-2.webp" width="100" height="100" loading="lazy" alt="Automatic Infinite Elytra" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="title-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="card-title">Automatic Infinite Elytra</a>
+                                        </h3>
+                                        <span class="badge label-1">advanced</span>
+                                        <span class="span title-2" id="/8flZ0yt8_downloads"></span>
+                                    </div>
+
+                                    <p class="card-text label-1">
+                                        A client-side elytra autopilot which uses Minecraft's infinite fly glitch.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li style="margin-top: 72px;" id="HIII">
+                            <div class="menu-card hover:card">
+
+                                <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+                                    <img src="./assets/images/menu-3.webp" width="100px" height="100px" loading="lazy" alt="Health indicators" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="title-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="card-title">Health Indicators</a>
+
+                                        </h3>
+                                        <span class="badge label-1">favourite</span>
+
+
+                                        <span class="span title-2" id="/htkVd6dQ_downloads"></span>
+
+                                    </div>
+
+                                    <p class="card-text label-1">
+                                        Simple damage indicator mod that shows a floating health bar (or number) above Players and Mobs.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li style="margin-top: 72px; margin-left: -17px;" id="N">
+                            <div class=" menu-card hover:card ">
+
+                                <figure class="card-banner img-holder " style="--width: 100; --height: 100; ">
+                                    <img src="./assets/images/menu-4.webp " width="100 " height="100 " loading="lazy " alt="Tokusen Wagyu " class="img-cover ">
+                                </figure>
+
+                                <div>
+
+                                    <div class="title-wrapper ">
+                                        <h3 class="title-3 ">
+                                            <a href="# " class="card-title ">No Durability</a>
+                                        </h3>
+                                        <span class="span title-2 " id="/I4TO1llk_downloads "></span>
+                                    </div>
+
+                                    <p class="card-text label-1 ">
+                                        Eliminates durability mechanic entirely from Minecraft. ᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li style="margin-top: 73px;" id="HB">
+                            <div class="menu-card hover:card ">
+
+                                <figure class="card-banner img-holder " style="--width: 100; --height: 100; ">
+                                    <img src="./assets/images/menu-5.png " width="100 " height="100 " loading="lazy " alt="No durability " class="img-cover ">
+                                </figure>
+
+                                <div>
+
+                                    <div class="title-wrapper ">
+                                        <h3 class="title-3 ">
+                                            <a href="# " class="card-title ">Homeward Bound</a>
+                                        </h3>
+
+                                        <span class="span title-2 " id="/ywmtd0Ph_downloads "></span>
+                                    </div>
+
+                                    <p class="card-text label-1 ">
+                                        Simple /home,/back and /spawn commands, with OPTIONAL LuckPerms and Combat Timer support.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li style="margin-top: 73px; margin-left: -17px;" id="MC">
+                            <div class=" menu-card hover:card ">
+
+                                <figure class=" card-banner img-holder " style=" --width: 100; --height: 100; ">
+                                    <img src=" ./assets/images/menu-6.png " width=" 100 " height=" 100 " loading=" lazy " alt=" Manhunt compass " class=" img-cover ">
+                                </figure>
+
+                                <div>
+
+                                    <div class=" title-wrapper ">
+                                        <h3 class=" title-3 ">
+                                            <a href=" # " class=" card-title ">Manhunt compass</a>
+                                        </h3>
+
+                                        <span class=" span title-2 " id=" /8bKKcues_downloads "></span>
+                                    </div>
+
+                                    <p class=" card-text label-1 ">
+                                        Adds a compass that can be used to track players. Multiple players supported
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                    <br>
+
+                    <p class=" menu-text text-center ">
+                        Available on CurseForge and Modrinth</span>
+                    </p>
+
+                    <a href="#" class=" btn btn-primary " id="Gen">
+                        <span class=" text text-1 ">Open CurseForge/Modrinth Page</span>
+
+
+                        <span class=" text text-2 " aria-hidden=" true ">View all projects</span>
+                    </a>
+                    <br>
+                </div>
+
+            </section>
+
+
+
+
+            <!-- 
+        - #FEATURES
+      -->
+
+
+
+
+
+
+
+            <!-- 
+        - #EVENT
+      -->
+
+
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+    <div id="footers">
+        <footer class=" footer section has-bg-image text-center " style=" background-image: url( './assets/images/footer-bg.webp' ) ">
+            <br><br><br><br>
+            <div class=" container ">
+                <div class=" footer-top grid-list " style="text-align: center;">
+                    <img src="assets/images/hanging-signs.png" alt="" style="position: relative; margin-top: -15px; scale:250%; transform: translate(68%);" class="remover" id="hanger">
+
+                    <div class="centerrer" style="position: absolute; text-align: center; margin-top: 325px; transform: translate(130%, 0);">
+                        <div class=" footer-brand has-before has-after ">
+                            <br><br>
+                            <a href=" # " class=" logo ">
+                                <img src=" ./assets/images/adytech99.png " width=" 225 " height=" 50 " loading=" lazy " alt=" AdyTech99 home ">
+                            </a>
+
+
+                            <h2 class="headline-1" style="scale:80%">Find me</h2>
+                            <ul style="color: white;">
+                                <li style="color: white;">
+                                    <address class=" body-4 " style="color: white;">
+                                        On <a href=" https://modrinth.com/user/AdyTech99 " target="_blank"
+                                            style=" display: inline; text-decoration:underline; color: white;">
+                                            Modrinth</a>
+                                        and <a href=" https://www.curseforge.com/members/adytech99/projects "
+                                            target="_blank"
+                                            style=" display: inline; text-decoration:underline; color: white; ">CurseForge</a>
+                                    </address>
+                                </li>
+                                <p>--</p>
+                                <li><a class=" body-4 " href=" mailto:contact@adytech99.dev " style=" text-decoration:underline; color: white; ">
+                                        Email contact@adytech99.dev</a> </li>
+                                <p>--</p>
+                                <li><a class=" body-4 " href=" https://discord.com/invite/4eWX2duHfJ " target="_blank" style=" text-decoration:underline; color: white; ">
+                                        Join the Discord (recommended)
+                                    </a> </li>
+                            </ul>
+                            <div class=" wrapper " style="margin-top: 15px;">
+                                <div class=" separator "></div>
+                                <div class=" separator "></div>
+                                <div class=" separator "></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--<ul class=" footer-list ">
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Home</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Contact</a>
+                    </li>
+
+                </ul>
+
+                <ul class=" footer-list ">
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Youtube</a>
+                    </li>
+
+                    <li>
+                        <a href=" # " class=" label-2 footer-link hover-underline ">Google Map</a>
+                    </li>
+
+                </ul>-->
+
+                </div>
+                <br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <div class=" footer-bottom " style="margin-top: -100px;">
+                    <i class=" copyright ">
+                        &copy; 2024 AdyTech99. Made by <u><a href="https://github.com/Swaritz" target="_blank">
+                                Swaritz</a> </u>& <u> <a href="https://github.com/adytech99">AdyTech99</a></u><br>
+                        <a href=" https://github.com/Swaritz/AdyTech99 " target=" _blank "
+                            style=" text-decoration:underline ">Website is Open Source!</a>
+                    </i>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+
+
+
+        <!-- 
+    - #BACK TO TOP
+  -->
+
+        <a href=" #top " class=" back-top-btn active " aria-label=" back to top " data-back-top-btn>
+            <img src=" ./assets/images/Up arrow.webp " alt=" Top " height=" 45 " width=" 45 " id=" topper " style="rotate: 115deg">
+        </a>
+
+
+
+
+
+        <!-- 
+    - custom js link
+  -->
+        <script src=" ./assets/js/script.js "></script>
+        <script src=" ./assets/js/autoinfelytra.js "></script>
+        <script src=" ./assets/js/farlandsreborn.js "></script>
+        <script src=" ./assets/js/healthindicators.js "></script>
+        <script src=" ./assets/js/homewardbound.js "></script>
+        <script src=" ./assets/js/manhuntcompass.js "></script>
+        <script src=" ./assets/js/nodurability.js "></script>
+        <script src="./assets/js/popup.js"></script>
+
+
+        <!-- 
+    - ionicon link
+  -->
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+</body>
+
+</html>
