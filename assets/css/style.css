@@ -387,6 +387,11 @@ body.nav-active {
     padding: 12px 45px;
     overflow: hidden;
     z-index: 1;
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .btn::before {
@@ -433,7 +438,11 @@ body.nav-active {
 }
 
 .btn-secondary {
-    backdrop-filter: blur(5px);
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .btn-secondary::before {
@@ -676,6 +685,13 @@ body.nav-active {
 
 .topbar {
     display: none;
+    background: rgba( 255, 255, 255, 0.15);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+    border: none;
+    /*glassmorphic*/
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 255, 0) 100%);
 }
 
 
@@ -702,7 +718,12 @@ body.nav-active {
 .header.active {
     padding-block: 20px;
     background-color: var(--eerie-black-4);
-    border-color: var(--black-alpha-15);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 0) 100%);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+    border: none;
+    /*glassmorphic*/
 }
 
 .header.hide {
@@ -763,6 +784,11 @@ body.nav-active {
     visibility: hidden;
     z-index: 2;
     transition: var(--transition-2);
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .navbar.active {
@@ -900,6 +926,11 @@ body.nav-active {
 
 .hero .slider-btn {
     display: none;
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .hero {
@@ -994,9 +1025,15 @@ body.nav-active {
 }
 
 .hero-btn::after {
+    z-index: -2;
     inset: 0;
     border: 1px solid var(--gold-crayola);
     animation: rotate360 15s linear infinite;
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .slider-reveal {
@@ -1612,7 +1649,12 @@ textarea.input-field {
 \*-----------------------------------*/
 
 #topper {
-    rotate: 115deg;
+    z-index: 99;
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .back-top-btn {
@@ -1620,7 +1662,7 @@ textarea.input-field {
     bottom: 25px;
     right: 25px;
     background-color: var(--smoky-black-1);
-    border: 3px solid var(--gold-crayola);
+    border: 1px solid var(--gold-crayola);
     color: var(--smoky-black-1);
     font-size: 22px;
     width: 50px;
@@ -1633,6 +1675,11 @@ textarea.input-field {
     opacity: 0;
     visibility: hidden;
     z-index: 4;
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
 }
 
 .back-top-btn:is(:hover,
@@ -1691,7 +1738,7 @@ textarea.input-field {
         z-index: 4;
         transition: var(--transition-1);
     }
-    .topbar:has(~.header.active) {
+    .topbar:has~.header.active {
         transform: translateY(-100%);
     }
     .topbar-item:not(.link),
@@ -1854,6 +1901,11 @@ textarea.input-field {
         display: grid;
         position: absolute;
         z-index: 1;
+        background: rgba( 255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 6.5px);
+        -webkit-backdrop-filter: blur( 6.5px);
+        /*glassmorphic*/
         color: var(--gold-crayola);
         font-size: 2.4rem;
         border: 1px solid var(--gold-crayola);
