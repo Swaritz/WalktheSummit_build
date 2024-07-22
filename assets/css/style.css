@@ -388,7 +388,6 @@ body.nav-active {
     overflow: hidden;
     z-index: 1;
     background: rgba( 255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 6.5px);
     -webkit-backdrop-filter: blur( 6.5px);
     /*glassmorphic*/
@@ -439,7 +438,6 @@ body.nav-active {
 
 .btn-secondary {
     background: rgba( 255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 6.5px);
     -webkit-backdrop-filter: blur( 6.5px);
     /*glassmorphic*/
@@ -641,7 +639,7 @@ body.nav-active {
     border: 3px solid var(--white);
     border-block-start-color: var(--smoky-black-3);
     margin-block-end: 45px;
-    animation: rotate360 1s linear infinite;
+    animation: rotate360 .1s linear infinite;
 }
 
 @keyframes rotate360 {
@@ -927,7 +925,6 @@ body.nav-active {
 .hero .slider-btn {
     display: none;
     background: rgba( 255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 6.5px);
     -webkit-backdrop-filter: blur( 6.5px);
     /*glassmorphic*/
@@ -1835,6 +1832,30 @@ textarea.input-field {
         height: 6px;
         flex-grow: 1;
         border-block: 1px solid var(--white-alpha-20);
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #000;
+    }
+    .block {
+        overflow: hidden;
+        width: 800px;
+        margin: 50px auto;
+        background: #fff;
+    }
+    .animation {
+        width: auto;
+        height: 100px;
+        font-size: 0px;
+    }
+    .animation div {
+        display: inline-block;
+        width: auto;
+        float: none;
+        padding: 0 10px;
     }
     /**
    * EVENT
