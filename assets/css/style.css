@@ -1142,6 +1142,7 @@ body.nav-active {
 .about .container {
     display: grid;
     gap: 120px;
+    margin-left: -10vh
 }
 
 .about-banner {
@@ -1370,6 +1371,7 @@ body.nav-active {
 
 .reservation-form {
     margin-block-start: -270px;
+    background-color: #050303;
 }
 
 .form-text {
@@ -1533,6 +1535,82 @@ textarea.input-field {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+
+#wand {
+    width: 10vmin;
+    aspect-ratio: 1 / 10;
+    background: linear-gradient( to right, rgb(26 24 28) 10%, rgb(42 40 44) 45% 55%, rgb(26 24 28) 90%);
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    translate: -50%;
+    rotate: -3deg;
+    z-index: 100;
+    border-radius: 3vmin;
+    box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+    overflow: hidden;
+}
+
+#wand>.cap {
+    height: 20%;
+    width: 100%;
+    background: linear-gradient( to right, rgb(212 221 236) 10%, rgb(255 255 255) 45% 55%, rgb(212 221 236) 90%);
+}
+
+#tiles {
+    display: flex;
+}
+
+.tile {
+    display: grid;
+    place-items: center;
+    width: 38vmin;
+    aspect-ratio: 1;
+    border-radius: 2vmin;
+    box-shadow: 0vmin 3vmin 6vmin rgb(0 0 0 / 25%), inset 0vmin 0.5vmin 1vmin rgb(255 255 255 / 15%);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    /*glassmorphic*/
+    scale: 125%;
+}
+
+.tile:nth-child(1) {
+    rotate: 0deg;
+    z-index: 3;
+}
+
+.tile:nth-child(2) {
+    rotate: -2deg;
+    z-index: 2;
+}
+
+.tile:nth-child(3) {
+    rotate: 5deg;
+    z-index: 1;
+}
+
+.tile:is(:nth-child(2),
+ :nth-child(3)) {
+    margin-left: -10vmin;
+}
+
+.tile>i {
+    font-size: 15vmin;
+    color: rgb(255 255 255 / 10%);
+}
+
+.tile>img {
+    height: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+    opacity: var(--opacity);
+    filter: blur(calc(var(--blur) * 10px));
+}
 
 .footer-top {
     margin-block-end: 70px;
@@ -1845,6 +1923,7 @@ textarea.input-field {
         width: 800px;
         margin: 50px auto;
         background: #fff;
+        left: 20vh
     }
     .animation {
         width: auto;
@@ -2309,4 +2388,65 @@ textarea.input-field {
         bottom: 80px;
         left: 0;
     }
+}
+
+
+/**
+   * TOPBAR
+   */
+
+.bottombar {
+    display: block;
+    left: 0;
+    top: -10vh;
+    width: 100%;
+    padding-block: 10px;
+    border-block-end: 1px solid var(--white-alpha-20);
+    z-index: 4;
+    transition: var(--transition-1);
+    background: #1e1d1d;
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+    /*glassmorphic*/
+}
+
+.bottombar:has~.header.active {
+    transform: translateY(-100%);
+}
+
+.bottombar-item:not(.link),
+.bottombar .separator {
+    display: none;
+}
+
+.bottombar .container,
+.bottombar-item {
+    display: flex;
+    align-items: center;
+}
+
+.bottombar .container {
+    justify-content: center;
+    gap: 30px;
+}
+
+.bottombar-item {
+    gap: 6px;
+}
+
+.bottombar-item ion-icon {
+    --ionicon-stroke-width: 60px;
+}
+
+.bottombar-item .span {
+    font-size: var(--fontSize-label-1);
+}
+
+.bottombar .link {
+    transition: var(--transition-1);
+}
+
+.bottombar .link:is(:hover,
+ :focus-visible) {
+    color: var(--gold-crayola);
 }
