@@ -72,10 +72,10 @@ function isMobileDevice() {
 
 if (isMobileDevice()) {
     blob.remove();
-    const remove = document.querySelectorAll(".remover")
-    if (remove) {
-        remove.remove()
-    }
+    var elements = document.querySelectorAll('.remover');
+    elements.forEach(function(element) {
+        element.parentNode.removeChild(element);
+    });
 }
 
 const preloader = document.querySelector("[data-preaload]");
