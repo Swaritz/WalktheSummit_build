@@ -72,6 +72,10 @@ function isMobileDevice() {
 
 if (isMobileDevice()) {
     blob.remove();
+    const remove = document.querySelectorAll(".remover")
+    if (remove) {
+        remove.remove()
+    }
 }
 
 const preloader = document.querySelector("[data-preaload]");
