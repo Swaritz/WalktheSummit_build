@@ -1,6 +1,7 @@
 const wand = document.getElementById("wand"),
     tiles = document.querySelectorAll(".tile");
 
+
 const xy = (x, y) => ({ x, y }),
     px = value => `${value}px`,
     deg = value => `${value}deg`,

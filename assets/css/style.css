@@ -639,7 +639,7 @@ body.nav-active {
     border: 3px solid var(--white);
     border-block-start-color: var(--smoky-black-3);
     margin-block-end: 45px;
-    animation: rotate360 .1s linear infinite;
+    animation: rotate360 1s linear infinite;
 }
 
 @keyframes rotate360 {
