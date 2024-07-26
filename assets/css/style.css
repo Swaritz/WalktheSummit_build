@@ -1142,7 +1142,6 @@ body.nav-active {
 .about .container {
     display: grid;
     gap: 120px;
-    margin-left: -10vh
 }
 
 .about-banner {
