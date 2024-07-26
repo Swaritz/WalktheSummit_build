@@ -5,10 +5,6 @@ $(window).on('load', function() {
 });
 
 function initSmoothScrolling(container, animation) {
-    /*
-     * @param {String} container Class or ID of the animation container
-     * @param {String} animation Name of the animation, e.g. smoothscroll
-     */
     var sliderWidth = 0;
     var animationWidth = 0;
     var sliderHeight = $('>div>div:first-of-type', container).outerHeight(false);
@@ -45,6 +41,9 @@ function initSmoothScrolling(container, animation) {
         $(this).addClass(cl);
     });
 }
+
+
+
 const blob = document.getElementById("blob");
 window.onpointermove = event => {
     const { pageX, pageY } = event;
@@ -56,22 +55,15 @@ window.onpointermove = event => {
 }
 
 
-
 function isMacOS() {
     return navigator.platform.toUpperCase().indexOf('MAC') >= 0;
 }
 
 if (isMacOS()) {
     var styleElement = document.getElementById('blob');
-    var styleElementaa = document.getElementById('hanger')
     if (styleElement) {
         styleElement.remove()
-        styleElementaa.remove()
     }
-    var removerrr = document.querySelector(".centerrer")
-    removerrr.style.marginTop = '-300px'
-    var bottomtext = document.querySelector(".footer-bottom")
-    bottomtext.style.marginTop = '-240px'
 }
 
 function isMobileDevice() {
@@ -79,40 +71,7 @@ function isMobileDevice() {
 }
 
 if (isMobileDevice()) {
-    var elements = document.querySelectorAll('.remover');
-    elements.forEach(function(element) {
-        element.parentNode.removeChild(element);
-    });
     blob.remove();
-    var bottomtext = document.querySelector(".footer-bottom");
-    bottomtext.style.marginTop = '-240px';
-}
-
-
-window.addEventListener('load', videoScroll);
-window.addEventListener('scroll', videoScroll);
-
-function videoScroll() {
-
-    if (document.querySelectorAll('video[autoplay]').length > 0) {
-        var windowHeight = window.innerHeight,
-            videoEl = document.querySelectorAll('video[autoplay]');
-
-        for (var i = 0; i < videoEl.length; i++) {
-
-            var thisVideoEl = videoEl[i],
-                videoHeight = thisVideoEl.clientHeight,
-                videoClientRect = thisVideoEl.getBoundingClientRect().top;
-
-            if (videoClientRect <= ((windowHeight) - (videoHeight * .5)) && videoClientRect >= (0 - (videoHeight * .5))) {
-                thisVideoEl.play();
-            } else {
-                thisVideoEl.pause();
-            }
-
-        }
-    }
-
 }
 
 const preloader = document.querySelector("[data-preaload]");
@@ -263,58 +222,3 @@ window.addEventListener("mousemove", function(event) {
     }
 
 });
-
-
-const wand = document.getElementById("wand"),
-    tiles = document.querySelectorAll(".tile");
-
-const xy = (x, y) => ({ x, y }),
-    px = value => `${value}px`,
-    deg = value => `${value}deg`,
-    clamp = (value, min, max) => Math.max(Math.min(value, max), min);
-
-const updateMouse = (mouseX, mouseY) => {
-    const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
-
-    const mouse = {
-        position: xy(mouseX, mouseY),
-        decimal: xy(mouseX / windowWidth, mouseY / windowHeight),
-        multiplier: xy(1.3, 0.4),
-        offset: xy(windowWidth * -0.15, windowHeight * 0.1),
-        modifiedPosition: xy(0, 0)
-    }
-
-    mouse.modifiedPosition.x = mouse.position.x * mouse.multiplier.x + mouse.offset.x;
-    mouse.modifiedPosition.y = mouse.position.y * mouse.multiplier.y + mouse.offset.y;
-
-    return mouse;
-}
-
-const revealImages = mouseX => {
-    for (const tile of tiles) {
-        const dimensions = tile.getBoundingClientRect(),
-            relativeMouseX = mouseX - dimensions.left,
-            mouseXAsDecimal = clamp(relativeMouseX / dimensions.width, 0, 1);
-
-        const opacity = mouseXAsDecimal,
-            blur = 1 - mouseXAsDecimal;
-
-        tile.style.setProperty("--opacity", opacity);
-        tile.style.setProperty("--blur", blur);
-    }
-}
-
-const getWandStyles = mouse => ({
-    left: px(mouse.modifiedPosition.x),
-    top: px(mouse.modifiedPosition.y),
-    rotate: deg(mouse.decimal.x * 20 - 10)
-});
-
-window.onmousemove = e => {
-    const mouse = updateMouse(e.clientX, e.clientY),
-        wandStyles = getWandStyles(mouse);
-
-    wand.animate(wandStyles, { duration: 700, fill: "forwards" });
-
-    revealImages(mouse.modifiedPosition.x);
-}
