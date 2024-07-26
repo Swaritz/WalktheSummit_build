@@ -76,6 +76,8 @@ if (isMobileDevice()) {
     elements.forEach(function(element) {
         element.parentNode.removeChild(element);
     });
+    var marginalp = document.querySelectorAll("mt-100")
+
 }
 
 const preloader = document.querySelector("[data-preaload]");
