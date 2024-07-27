@@ -86,6 +86,7 @@ body {
     overflow: hidden;
     display: grid;
     place-items: center;
+    margin-top: -50px;
 }
 
 * {
