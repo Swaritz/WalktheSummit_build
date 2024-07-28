@@ -2403,7 +2403,7 @@ textarea.input-field {
    * TOPBAR
    */
 
-.bottombar {
+#bottombar {
     display: block;
     left: 0;
     top: -10vh;
@@ -2418,43 +2418,43 @@ textarea.input-field {
     /*glassmorphic*/
 }
 
-.bottombar:has~.header.active {
+#bottombar:has~.header.active {
     transform: translateY(-100%);
 }
 
-.bottombar-item:not(.link),
-.bottombar .separator {
+#bottombar-item:not(.link),
+#bottombar .separator {
     display: none;
 }
 
-.bottombar .container,
-.bottombar-item {
+#bottombar .container,
+#bottombar-item {
     display: flex;
     align-items: center;
 }
 
-.bottombar .container {
+#bottombar .container {
     justify-content: center;
     gap: 30px;
 }
 
-.bottombar-item {
+#bottombar-item {
     gap: 6px;
 }
 
-.bottombar-item ion-icon {
+#bottombar-item ion-icon {
     --ionicon-stroke-width: 60px;
 }
 
-.bottombar-item .span {
+#bottombar-item .span {
     font-size: var(--fontSize-label-1);
 }
 
-.bottombar .link {
+#bottombar .link {
     transition: var(--transition-1);
 }
 
-.bottombar .link:is(:hover,
+#bottombar .link:is(:hover,
  :focus-visible) {
     color: var(--gold-crayola);
 }
