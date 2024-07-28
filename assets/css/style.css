@@ -1380,6 +1380,14 @@ body.nav-active {
 .reservation-form {
     margin-block-start: -270px;
     background-color: #050303;
+    text-align: center;
+    width: fit-content;
+}
+
+.fixerr {
+    text-align: center;
+    transform: translate(23%);
+    height: max-content;
 }
 
 .form-text {
