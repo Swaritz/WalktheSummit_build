@@ -88,7 +88,7 @@
 #blob {
     width: 30px;
     height: 30px;
-    border: 5px solid --gold-crayola;
+    border: 5px solid #c28840;
     position: absolute;
     left: 50%;
     top: 50%;
