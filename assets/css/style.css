@@ -1070,6 +1070,14 @@ body.nav-active {
     animation-delay: 1000ms;
 }
 
+.hero-title {
+    color: var(--white);
+    font-family: var(--fontFamily-forum);
+    font-weight: var(--weight-regular);
+    line-height: var(--lineHeight-2);
+    font-size: var(--fontSize-headline-2);
+}
+
 .hero .slider-item.active .hero-text {
     animation-delay: 1.5s;
 }
