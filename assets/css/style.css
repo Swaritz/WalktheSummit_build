@@ -33,6 +33,7 @@
     --fontSize-display-1: calc(1.3rem + 6.7vw);
     --fontSize-headline-1: calc(2rem + 2.5vw);
     --fontSize-headline-2: calc(1.3rem + 2.4vw);
+    --fontSize-headline-3: calc(1.7rem + .7vw);
     --fontSize-title-1: calc(1.6rem + 1.2vw);
     --fontSize-title-2: 2.2rem;
     --fontSize-title-3: 2.1rem;
@@ -53,6 +54,7 @@
     --lineHeight-4: 1.6em;
     --lineHeight-5: 1.85em;
     --lineHeight-6: 1.4em;
+    --lineHeight-7: 1.0em;
     /* letter-spacing */
     --letterSpacing-1: 0.15em;
     --letterSpacing-2: 0.4em;
@@ -230,6 +232,7 @@ body.nav-active {
 .display-1,
 .headline-1,
 .headline-2,
+.headline-3,
 .title-1,
 .title-2,
 .title-3,
@@ -252,6 +255,11 @@ body.nav-active {
 .headline-2 {
     font-size: var(--fontSize-headline-2);
     line-height: var(--lineHeight-6);
+}
+
+.headline-3 {
+    font-size: var(--fontSize-headline-3);
+    line-height: var(--line-height-7);
 }
 
 .title-1 {
@@ -463,14 +471,10 @@ body.nav-active {
 .has-before,
 .has-after {
     position: relative;
-    z-index: 1;
 }
 
 .has-before::before,
-.has-after::after {
-    content: "";
-    position: absolute;
-}
+.has-after::after {}
 
 .section {
     position: relative;
@@ -1096,7 +1100,7 @@ body.nav-active {
 }
 
 .service .section-text {
-    margin-block-end: 40px;
+    margin-block-end: 0px;
 }
 
 .service-card {
@@ -1148,12 +1152,12 @@ body.nav-active {
 \*-----------------------------------*/
 
 .about .section-text {
-    margin-block: 15px 30px;
+    margin-block: 1px 1px;
 }
 
 .about .btn {
     margin-inline: auto;
-    margin-block-start: 26px;
+    margin-block-start: 6px;
 }
 
 .about .container {
@@ -1163,11 +1167,11 @@ body.nav-active {
 
 .about-banner {
     position: relative;
-    margin-block-end: 120px;
+    margin-block-end: 20px;
 }
 
 .about-banner>.w-100 {
-    padding-inline-start: 50px;
+    padding-inline-start: 20px;
 }
 
 .about .abs-img {
@@ -1179,7 +1183,7 @@ body.nav-active {
 }
 
 .about .abs-img-1 {
-    bottom: -120px;
+    bottom: -20px;
     left: 0;
     width: 150px;
     padding-block: 50px;
@@ -1187,8 +1191,32 @@ body.nav-active {
 
 .about .abs-img-2 {
     top: -65px;
-    right: 0;
+    right: -5;
     overflow: hidden;
+}
+
+.about .abs-img-3 {
+    bottom: 650px;
+    left: 75px;
+    width: 370px;
+    padding-block: 50px;
+    z-index: 0;
+}
+
+.about .abs-img-4 {
+    bottom: 550px;
+    left: 500px;
+    width: 300px;
+    padding-block: 50px;
+    z-index: 3;
+}
+
+.about .abs-img-5 {
+    bottom: 00px;
+    left: 520px;
+    width: 300px;
+    padding-block: 50px;
+    z-index: -2;
 }
 
 .about .abs-img-1::before {
@@ -1206,6 +1234,33 @@ body.nav-active {
     background-repeat: no-repeat;
     background-size: contain;
     animation: rotate360 15s linear infinite;
+}
+
+.about .abs-img-3::before {
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(50%, 50%);
+    width: 40px;
+    background-repeat: repeat;
+}
+
+.about .abs-img-4::before {
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(50%, 50%);
+    width: 40px;
+    background-repeat: repeat;
+}
+
+.about .abs-img-5::before {
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(50%, 50%);
+    width: 40px;
+    background-repeat: repeat;
 }
 
 
@@ -1386,10 +1441,12 @@ body.nav-active {
 \*-----------------------------------*/
 
 .reservation-form {
-    margin-block-start: -270px;
-    background-color: #050303;
+    margin-block-start: -300px;
     text-align: center;
-    width: fit-content;
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur( 4.5px);
+    mix-blend-mode: difference;
+    /*glassmorphic*/
 }
 
 .fixerr {
@@ -1399,64 +1456,7 @@ body.nav-active {
 }
 
 .form-text {
-    margin-block-end: 40px;
-}
-
-.form-text .link {
-    display: inline;
-    color: var(--gold-crayola);
-}
-
-.form-right .headline-1 {
-    margin-block-end: 40px;
-}
-
-.form-right .contact-label {
-    margin-block-end: 5px;
-}
-
-.form-right .separator {
-    margin: 20px auto;
-}
-
-.form-right .body-4 {
-    color: var(--quick-silver);
-    line-height: var(--lineHeight-3);
-}
-
-.form-right .body-4:not(:last-child) {
-    margin-block-end: 25px;
-}
-
-.form-left,
-.form-right {
-    padding: 40px 20px 30px;
-}
-
-.input-field[type="date"] {
-    text-transform: uppercase;
-    padding-inline-end: 10px;
-}
-
-.input-field[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
-}
-
-textarea.input-field {
-    resize: none;
-    height: 140px;
-    padding-block: 20px;
-    line-height: var(--lineHeight-1);
-}
-
-.form-left .btn {
-    max-width: 100%;
-    width: 100%;
-}
-
-.form-right {
-    background-repeat: repeat;
-    background-position: top left;
+    margin-block-end: 1px;
 }
 
 
@@ -1762,7 +1762,7 @@ textarea.input-field {
     right: 25px;
     background-color: var(--smoky-black-1);
     border: 1px solid var(--gold-crayola);
-    color: var(--smoky-black-1);
+    color: var(--gold-crayola);
     font-size: 22px;
     width: 50px;
     height: 50px;
@@ -1778,6 +1778,7 @@ textarea.input-field {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 6.5px);
     -webkit-backdrop-filter: blur( 6.5px);
+    mix-blend-mode: difference;
     /*glassmorphic*/
 }
 
