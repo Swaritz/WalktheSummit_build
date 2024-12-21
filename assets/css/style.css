@@ -2598,3 +2598,172 @@ body.nav-active {
     opacity: var(--opacity);
     filter: blur(calc(var(--blur) * 10px));
 }
+
+
+.banner3d{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner3d .slider3d{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(360deg);
+    }
+}
+
+.banner3d .slider3d .item3d{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(400px);
+}
+.banner3d .slider3d .item3d img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner3d .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.banner3d .content h1{
+    font-family: 'ICA Rubrik';
+    font-size: 16em;
+    line-height: 1em;
+    color: #25283B;
+    position: relative;
+}
+.banner3d .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+.banner3d .content .author{
+    font-family: Poppins;
+    text-align: right;
+    max-width: 200px;
+}
+.banner3d .content h2{
+    font-size: 3em;
+}
+.banner3d .content .model{
+    background-image: url(images/model.png);
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+}
+@media screen and (max-width: 1023px) {
+    .banner3d .slider3d{
+        width: 160px;
+        height: 200px;
+        left: calc(50% - 80px);
+    }
+    .banner3d .slider3d .item3d{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(300px);
+    }
+    .banner3d .content h1{
+        text-align: center;
+        width: 100%;
+        text-shadow: 0 10px 20px #000;
+        font-size: 7em;
+    }
+    .banner3d .content .author{
+        color: #fff;
+        padding: 20px;
+        text-shadow: 0 10px 20px #000;
+        z-index: 2;
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner3d .slider3d{
+        width: 100px;
+        height: 150px;
+        left: calc(50% - 50px);
+    }
+    .banner3d .slider3d .item3d{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(180px);
+    }
+    .banner3d .content h1{
+        font-size: 5em;
+    }
+}
+
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 10px;
+    gap: 20px;
+}
+
+.msitem {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.msitem:hover {
+    transform: translateY(-10px);
+}
+
+/* Specific dimensions and colors for each item */
+.msitem1 { grid-row: span 15; background-color: #ff6f61; }
+.msitem2 { grid-row: span 20; background-color: #6b5b95; }
+.msitem3 { grid-row: span 10; background-color: #88b04b; }
+.msitem4 { grid-row: span 25; background-color: #d65076; }
+.msitem5 { grid-row: span 30; background-color: #ffb347; }
+.msitem6 { grid-row: span 15; background-color: #45b8ac; }
+.msitem7 { grid-row: span 20; background-color: #e94b3c; }
+.msitem8 { grid-row: span 10; background-color: #6c5b7b; }
+.msitem9 { grid-row: span 25; background-color: #00a86b; }
+.msitem10 { grid-row: span 30; background-color: #b565a7; }
