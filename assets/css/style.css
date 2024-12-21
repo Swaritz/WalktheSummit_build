@@ -199,9 +199,8 @@ body {
     font-size: var(--fontSize-body-4);
     font-weight: var(--weight-regular);
     line-height: var(--lineHeight-5);
-    overflow-y: hidden;
     overflow-x: hidden;
-    height: 300vh;
+    height: 100%;
 }
 
 body.loaded {
@@ -1939,9 +1938,11 @@ body.nav-active {
     * {
         margin: 0;
         padding: 0;
+        
     }
     body {
         background-color: #000;
+        height: 100%;
     }
     .block {
         overflow: hidden;
@@ -2395,7 +2396,7 @@ body.nav-active {
 #bottombar {
     display: block;
     left: 0;
-    top: -10vh;
+    top: 0vh;
     width: 100%;
     padding-block: 10px;
     border-block-end: 1px solid var(--white-alpha-20);
@@ -2404,6 +2405,7 @@ body.nav-active {
     backdrop-filter: blur( 10px);
     -webkit-backdrop-filter: blur( 10px);
     /*glassmorphic*/
+    z-index: 9;
 }
 
 
@@ -2532,7 +2534,7 @@ body.nav-active {
     top: 20%;
     translate: -50%;
     rotate: -3deg;
-    z-index: 5;
+    z-index: 4;
     border-radius: 3vmin;
     box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
     overflow: hidden;
