@@ -2767,3 +2767,11 @@ body.nav-active {
 .msitem8 { grid-row: span 10; background-color: #6c5b7b; }
 .msitem9 { grid-row: span 25; background-color: #00a86b; }
 .msitem10 { grid-row: span 30; background-color: #b565a7; }
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
