@@ -2432,7 +2432,7 @@ body.nav-active {
     backdrop-filter: blur( 10px);
     -webkit-backdrop-filter: blur( 10px);
     /*glassmorphic*/
-    z-index: 9;
+    z-index: 99;
 }
 
 

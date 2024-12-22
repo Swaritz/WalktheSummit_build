@@ -2405,7 +2405,7 @@ body.nav-active {
     backdrop-filter: blur( 10px);
     -webkit-backdrop-filter: blur( 10px);
     /*glassmorphic*/
-    z-index: 9;
+    z-index: 99;
 }
 
 
@@ -2534,7 +2534,7 @@ body.nav-active {
     top: 20%;
     translate: -50%;
     rotate: -3deg;
-    z-index: 4;
+    z-index: 2;
     border-radius: 3vmin;
     box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
     overflow: hidden;
