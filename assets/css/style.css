@@ -2775,3 +2775,27 @@ body.nav-active {
     clear: both;
     display: table;
   }
+
+  
+/*-----------------------------------*\
+  #RESERVATION
+\*-----------------------------------*/
+
+.reservation-form {
+    margin-block-start: -300px;
+    text-align: center;
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur( 4.5px);
+    mix-blend-mode: difference;
+    /*glassmorphic*/
+}
+
+.fixerr {
+    text-align: center;
+    transform: translate(23%);
+    height: max-content;
+}
+
+.form-text {
+    margin-block-end: 1px;
+}
