@@ -28,7 +28,6 @@
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/contactstyle.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- 
@@ -37,10 +36,10 @@
     <link rel="preload" as="image" href="./assets/images/hero-slider-1.png">
     <link rel="preload" as="image" href="./assets/images/hero-slider-2.png">
     <link rel="preload" as="image" href="./assets/images/hero-slider-3.png">
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
 </head>
 
-<body id="top">
+<body id="tops" style="margin-bottom: -1000px;">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
     <div id="blob"></div>
@@ -138,13 +137,14 @@
                 </li>
 
                 <li class="navbar-item">
-                    <a href="about.html" class="navbar-link hover-underline">
+                    <a href="about.html" class="navbar-link hover-underline active">
                         <div class="separator"></div>
 
                         <span class="span">About </span>
                     </a>
                 </li>
 
+                
                 <li class="navbar-item">
                     <a href="donate.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
@@ -154,14 +154,14 @@
                 </li>
 
                 <li class="navbar-item">
-                    <a href="contact.html" class="navbar-link hover-underline active">
+                    <a href="contact.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
 
                         <span class="span">Contact</span>
                     </a>
                 </li>
                 <li class="navbar-item">
-                    <a href="faqs.html" class="navbar-link hover-underline">
+                    <a href="faqs.html" class="navbar-link hover-underline active">
                         <div class="separator"></div>
 
                         <span class="span">FAQS</span>
@@ -215,115 +215,88 @@
     </div>
 </header>
 
-
     <main>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <section class="reservation">
-            <div class="container">
-    
-                <div class="form reservation-form bg-black-10">
-    
-                    <form class="form-left" action="https://formspree.io/f/xanwrqny" method="POST">
-                        <div class="anti-remover">
-                            <br><br>
-                        </div>
-    
-                        <h2 class="headline-1 text-center">Mail Us</h2>
-                        <br> <br>
-    
-                        <p class="form-text text-center">
-    
-                        </p>
-    
-                        <div class="input-wrapper">
-                            <input type="text" name="name" placeholder="Your Name" autocomplete="on" class="input-field">
-    
-                            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="on" class="input-field">
-                        </div>
-    
-                        <div class="input-wrapper">
-                            <input type="email" name="Email" placeholder="Email address" autocomplete="on" class="input-field">
-    
-                            <input type="text" name="Address" placeholder="Address" autocomplete="on" class="input-field">
-                        </div>
-    
-    
-    
-                        <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
-                        <div class="centerer">
-                            <button type="submit" class="btn btn-secondary centerer remover" style="position:absolute; margin-top:0px;left: 24.5vw ;
-                            transform: translateX(-50%);">
-                                <span class="text text-1">Submit</span>
-    
-                                <span class="text text-2" aria-hidden="true">Submit</span>
-                            </button>
-                        </div>
-                        <div class="centerer anti-remover">
-                            <button type="submit" class="btn btn-secondary centerer " style="position:absolute; margin-top:0px;left: 50%;
-                            transform: translateX(-50%);">
-                                <span class="text text-1">Submit</span>
-    
-                                <span class="text text-2" aria-hidden="true">Submit</span>
-                            </button>
-                            <br><br><br>
-                        </div>
-                    </form>
-    
-                    <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
-    
-                        <h2 class="headline-1 text-center">Contact Us</h2>
-    
-                        <p class="label-2 section-subtitle" id="about-label">Email address</p>
-    
-                        <a href="mailto:walkthesummit@gmail.com" class="section-text hoverer">walkthesummit@gmail.com</a>
-                        </a>
-    
-    
-                        <p class="label-2 section-subtitle" id="about-label">Phone Number</p>
-    
-                        <a href="tel:+919520008950" class="section-text hoverer">+91 9520008950 <br> +91
-                            9654191089</a>
-    
-    
-                        <p class="label-2 section-subtitle" id="about-label">Join Us</p>
-                        
-    
-                        <div class="centerer anti-remover">
-                            <br><br><br><br>
-                        </div>
-    
-                    </div>
-    
-                </div>
-    
-            </div>
-        </section>
-        <br>
-        <section style="text-align:center; ">
-            <p class="label-2 section-subtitle" id="about-label">Intrested?</p>
-            <div class="anti-remover">
-                <br><br><br>
-            </div>
-            <h1 class="headline-1 section-title">Get Involved</h1>
-            
         
-        
-        <dotlottie-player src="https://lottie.host/af371a7b-055c-470a-8963-5586b6dc4967/IaKXqmMWcu.lottie" background="transparent" speed="0.5" style="width: 600px; height: 600px; max-width: fit-content;
-        margin-left: auto;
-        margin-top: -80px;
-        margin-right: auto;" loop autoplay></dotlottie-player>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYz7ayFUmQ5GyFp30ujiD_zR7fwDivOokoklOgoRCribVEXQ/alreadyresponded" class="btn btn-secondary" style="position:absolute; margin-top:-100px;left: 50%;border-color: #265656;
-        transform: translateX(-50%);
-        " target="_blank">
-            <span class="text text-1" style="color: #265656;">Join Now</span>
-        
-            <span class="text text-2" aria-hidden="true">Join Now</span>
-        </a>
-    </section>
+        <article>
+            <br><br><br><br><br><br><br><br>
+    <section style="text-align:center; ">
+        <p class="label-2 section-subtitle" id="about-label">FAQs</p>
+        <div class="anti-remover">
+            <br><br><br>
+        </div>
+        <h1 class="headline-1 section-title">Frequently Asked Questions</h1>
 
+    <div class="faq-header"></div>    
+    <div class="faq-content">
+    <div class="faq-question">
+      <input id="q1" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q1" class="panel-title">What is Walk the Summit's mission?</label>
+      <div class="panel-content"> Walk the Summit is dedicated to transforming the lives of children in remote Himalayan
+          villages by providing them with education, resources, and opportunities that transcend
+          the limitations of their local schools.</div>
+    </div>
+    
+    <div class="faq-question">
+      <input id="q2" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q2" class="panel-title"> How does Walk the Summit aim to achieve its mission?</label>
+      <div class="panel-content">Walk the Summit aims to achieve its mission by setting up educational infrastructure
+          such as computer labs, providing access to Wi-Fi, and empowering children with
+          essential 21st-century life skills.</div>
+    </div>
+    
+    <div class="faq-question">
+      <input id="q3" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q3" class="panel-title"> Why focus on remote Himalayan villages?</label>
+      <div class="panel-content">Walk the Summit focuses on remote Himalayan villages because these areas often lack
+          access to basic educational resources and opportunities, and children face significant
+          challenges in accessing quality education. </div>
+    </div>
+  
+    <div class="faq-question">
+      <input id="q4" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q4" class="panel-title">What specific programs does Walk the Summit offer?</label>
+      <div class="panel-content">Walk the Summit offers a range of programs including computer literacy classes,
+          English language workshops, STEM education initiatives, and mentorship programs
+          designed to empower children with the skills they need to succeed in the modern world.</div>
+    </div>
+  
+    <div class="faq-question">
+      <input id="q5" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q5" class="panel-title">How does Walk the Summit ensure sustainability of its programs?</label>
+      <div class="panel-content">Walk the Summit works closely with local communities, government agencies, and
+          other stakeholders to ensure the sustainability of its programs. Additionally, the
+          organization invests in training local teachers and leaders to carry forward its mission in
+          the long term. </div>
+    </div>
+  
+    <div class="faq-question">
+      <input id="q6" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q6" class="panel-title"> How does Walk the Summit measure the impact of its programs?</label>
+      <div class="panel-content">Walk the Summit employs various methods to measure the impact of its programs,
+          including tracking academic performance, conducting surveys and interviews with
+          students and teachers, and monitoring community engagement and participation.</div>
+    </div>
+  
+    <div class="faq-question">
+      <input id="q7" type="checkbox" class="panel">
+      <div class="plus">✦ </div>
+      <label for="q7" class="panel-title">Are there any challenges Walk the Summit faces in implementing its programs?</label>
+      <div class="panel-content">Walk the Summit faces challenges such as logistical hurdles in reaching remote
+          villages, limited resources, and cultural barriers. However, the organization remains
+          committed to overcoming these challenges in order to fulfill its mission.</div>
+    </div>
+  </div>
+</section>
 
-        <div id="bottombar" style="z-index: 5;">
-        <div class="container" id="Gen">
+    
+    <div id="bottombar" style="position: relative;">
+        <div class="container" id="Gen" style="position: relative;">
             <a href="https://milaap.org/fundraisers/support-underprivileged-children-of-himalayas" id="Gen2">
                 <address class="topbar-item">
                     <div class="icon">
@@ -365,11 +338,12 @@
         </div>
     </div>
     </main>
+
     <!-- 
     - #BACK TO TOP
   -->
 
-    <a href=" #top " class=" back-top-btn active " aria-label=" back to top " data-back-top-btn>
+    <a href=" #tops " class=" back-top-btn active " aria-label=" back to top "  style="z-index: 9;">
         <ion-icon name="chevron-up-outline" alt=" Top " id=" topper "></ion-icon>
     </a>
 
